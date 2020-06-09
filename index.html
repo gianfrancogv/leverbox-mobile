@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Leverbox</title>
+</head>
+<body>
+    <!--Logo-->
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+    </div>
+
+    <!--Pagina 1-->
+        <div id="mobile-1">
+            <div class="comencemos" id="comencemosBtn">
+                <img src="img/auto.png" alt="Comencemos">
+                <h1>¡Comencemos!</h1>
+            </div>
+        </div>
+
+    <!--Pagina 2 -->
+    <div id="mobile-2">
+        <div class="datos-titulo">
+            <img src="img/lapiz.png" alt="datos">
+            <h2>Revisá tus datos</h2>
+        </div>
+        <div class="datos">
+            <h3>Nombre</h3>
+            <h4 id="nombre">Victoria Sánchez</h4>
+        </div>
+        <div class="botones">
+            <button class="boton editar" onclick="editarDatos()">Editar datos</button>
+            <button class="boton confirmar" onclick="toggle2()">Confirmar</button>
+        </div>
+    </div>
+
+    <!--Pagina 3-->
+    <div id="mobile-3">
+        <div class="agendar-turno">
+            <img src="img/calendario.png" alt="calendario">
+            <h2>Agendar turno de inspección</h2>
+        </div>
+        <div class="taller">
+            <h3 class="left">Seleccionar taller</h3>
+            <select name="Taller" id="taller">
+                <option></option>
+                <option class="items" value="item 1">Taller 1</option>
+                <option class="items" value="item 2">Taller 2</option>
+                <option class="items" value="item 3">Taller 3</option>
+            </select>
+            <button class="boton" onclick="toggle3()">Confirmar</button>
+        </div>
+    </div>
+
+    <!--Pagina 4-->
+    <div id="mobile-4">
+        <div class="agendado">
+            <img src="img/check.png" alt="Ok">
+            <h2>Tu turno de inspección quedó agendado</h2>
+        </div>
+        <div class="fecha-hora">
+            <h3>Fecha: <span class="lighter">27/07/2019</span></h3>
+            <h3>Hora: <span class="lighter">9hs a 11hs</span></h3>
+        </div>
+        <div class="contacto">
+            <h4>En breve recibirás en tu casilla de e-mail un correo electrónico con los detalles del mismo</h4>
+            <h5>Ante cualquier consulta, comunicate con nosotros al (011) 5365-8310</h5>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
